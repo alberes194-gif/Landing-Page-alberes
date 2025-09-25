@@ -6,8 +6,8 @@
 body{
     font-family: sans-serif;
     line-height: 1.6;
-    color: #222;
-    background-color: #401835;
+    color: #494040;
+    background-color: #190915;
     overflow-x: hidden;
     padding-top: 100px;
 }
@@ -19,7 +19,7 @@ body{
 }
 
 header {
-    background: #36142d;
+    background: #190915;
     color: #fff;
     padding: 100px 20px 120px;
     text-align: center;
@@ -68,3 +68,115 @@ header {
     transform: scale;
     box-shadow: 0 0 40px rgb(70, 132, 143);
 }
+
+.benefits h2 {
+    grid-column: 1 / -1;
+} 
+
+.section-title {
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 80px;
+    color: #fff;
+    padding: 120px 20px;
+    font-weight: 800; 
+}
+
+.benefits {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    background-color: #190915;
+    padding: 120px 20px;
+    position: relative;
+}
+
+.benefit-card {
+    background: linear-gradient(227deg,rgb(40, 11, 33) 0%, rgb(68, 10, 65) 69%, rgb(39, 9, 43) 100%);
+    border: 1px solid #5b2053;
+    border-radius: 30px;
+    padding: 50px 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.benefit-card::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(227deg,rgba(33, 209, 156, 1) 0%, rgba(83, 35, 161, 1) 69%, rgba(104, 25, 115, 1) 100%);
+    border-radius: 30px;
+    opacity: 0;
+    z-index: -1;
+    transition: 0.5s ease;
+}
+
+.benefit-card:hover::before {
+    opacity: 1;
+}
+
+.benefit-card:hover {
+    transform: translateY(-10px);
+    background: #111;
+    cursor: pointer;
+}
+
+.benefit-number {
+    font-size: 5em;
+    font-weight: 900;
+    background: linear-gradient(227deg,rgba(33, 209, 156, 1) 0%, rgba(83, 35, 161, 1) 69%, rgba(104, 25, 115, 1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+}
+
+.benefit-card:hover .benefit-number {
+    background: none;
+    background-clip: unset;
+    -webkit-background-clip: unset;
+    -webkit-text-fill-color: unset;
+    color: #D9564A;
+}
+
+.benefit-number h3 {
+    color: #ffffff;
+    line-height: 1.8;
+    font-size: 1.1em;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    background-color: #1e0b19;
+    padding: 120px 20px;
+    text-align: center;
+}
+
+.features h2 {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.pill {
+    color: #fff;
+    background-color: #000;
+    border: 2px solid #222;
+    border-radius: 50px;
+    font-weight: 600;
+    padding: 15px 30px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.pill:hover {
+    border-color: #D9564A;
+    color: #D9564A;
+    transform: scale(1.1);
+}
+
