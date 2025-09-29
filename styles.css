@@ -7,7 +7,7 @@ body{
     font-family: sans-serif;
     line-height: 1.6;
     color: #494040;
-    background-color: #190915;
+    background-color: #0f050c;
     overflow-x: hidden;
     padding-top: 100px;
 }
@@ -19,7 +19,8 @@ body{
 }
 
 header {
-    background: #190915;
+/* colocar efeito liquify graphic de fundo */
+    background: #1e0b19;
     color: #fff;
     padding: 100px 20px 120px;
     text-align: center;
@@ -52,16 +53,18 @@ header {
 .hero-button{
     display: inline-block;
     background: linear-gradient(227deg,rgba(33, 209, 156, 1) 0%, rgba(83, 35, 161, 1) 69%, rgba(104, 25, 115, 1) 100%);
-    color: #ffffff;
-    padding: 20px 60px;
-    border-radius: 100px;
+    color: #fff;
+    padding: 20px 50px 20px;
+    border-radius: 50px;
     border: none;
     text-decoration: none;
     font-size: 1.1em;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 10px;
     transition: 0.5s;
+    position: relative;
+    z-index: 3;
 }
 
 .hero-button:hover{
@@ -86,7 +89,7 @@ header {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 30px;
-    background-color: #190915;
+    background-color: #0f050c;
     padding: 120px 20px;
     position: relative;
 }
@@ -95,7 +98,7 @@ header {
     background: linear-gradient(227deg,rgb(40, 11, 33) 0%, rgb(68, 10, 65) 69%, rgb(39, 9, 43) 100%);
     border: 1px solid #5b2053;
     border-radius: 30px;
-    padding: 50px 40px;
+    padding: 30px 60px;
     position: relative;
     overflow: hidden;
 }
@@ -125,7 +128,7 @@ header {
 }
 
 .benefit-number {
-    font-size: 5em;
+    font-size: 4em;
     font-weight: 900;
     background: linear-gradient(227deg,rgba(33, 209, 156, 1) 0%, rgba(83, 35, 161, 1) 69%, rgba(104, 25, 115, 1) 100%);
     background-clip: text;
@@ -178,5 +181,37 @@ header {
     border-color: #D9564A;
     color: #D9564A;
     transform: scale(1.1);
+}
+
+.cta-section {
+    background-color: #1e0b19;
+    border: 2px solid #222;
+    border-radius: 40px;
+    padding: 80px 60px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    margin: 120px auto;
+}
+
+.cta-section h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #FFF;
+    font-weight: 800;
+}
+
+.cta-section p {
+    font-size: 1.4em;
+    margin-bottom: 40px;
+    color: #888;
+}
+
+footer {
+    background-color: #0f0303;
+    color: #888;
+    text-align: center;
+    padding: 60px 0;
+    border-top: 1px solid #222;
 }
 
